@@ -1,0 +1,22 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../images/img_4937.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;   
+}
+.vida {
+    position: absolute;
+    top:0;
+}
+.vida img {
+    width: 50px;  
+}
+#barra {
+    background: yellow;
+    position: absolute;
+    left: 0;
+    width: 20%;
+}
+

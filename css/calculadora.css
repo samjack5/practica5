@@ -1,0 +1,49 @@
+body{
+    background-color: steelblue;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.lcd{
+    background-color: black;
+    color:yellow;
+    text-align: right;
+    font-size: 4em;
+    font-family: 'LCD', sans-serif;
+    width: 90%;
+    height: 100%;
+}
+
+button{
+    font-size: 4em;
+}
+
+.panelBasico{
+    display: grid;
+    grid-template-columns: repeat(4,[col] 1fr);
+    grid-template-rows: repeat(4, [row] 1fr);
+    grid-template-areas: "siete ocho nueve division"
+                         "cuatro cinco seis multiplicacion"
+                         "uno dos tres mas"
+                         "cero punto igual menos";
+    
+    width: 90%;
+    height: 100%;
+}
+#n7{grid-area: siete;}
+#n8{grid-area: ocho;}
+#n9{grid-area: nueve;}
+#divi{grid-area: division;}
+#n4{grid-area: cuatro;}
+#n5{grid-area: cinco;}
+#n6{grid-area: seis;}
+#multi{grid-area: multiplicacion;}
+#n1{grid-area: uno;}
+#n2{grid-area: dos;}
+#n3{grid-area: tres;}
+#suma{grid-area: mas;}
+#n0{grid-area: cero;}
+#dot{grid-area: punto;}
+#ig{grid-area: igual;}
+#resta{grid-area: menos;}

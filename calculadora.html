@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HTML5</title>
+    <link href="http://fonts.cdnfonts.com/css/lcd" rel="stylesheet">
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Calculadora</h1>
+        <hr>
+    </header>
+    <div class="lcd">0</div>
+    <section class="panelBasico">
+        <button id="n7" onclick="numero('7')">7</button>
+        <button id="n8" onclick="numero('8')">8</button>
+        <button id="n9" onclick="numero('9')">9</button>
+        <button id="divi" onclick="operador('/')">/</button>
+        <br>
+        <button id="n4" onclick="numero('4')">4</button>
+        <button id="n5" onclick="numero('5')">5</button>
+        <button id="n6" onclick="numero('6')">6</button>
+        <button id="multi" onclick="operador('X')">X</button>
+        <br>
+        <button id="n1" onclick="numero('1')">1</button>
+        <button id="n2" onclick="numero('2')">2</button>
+        <button id="n3" onclick="numero('3')">3</button>
+        <button id="suma" onclick="operador('+')">+</button>
+        <br>
+        <button id="n0" onclick="numero('0')">0</button>
+        <button id="dot" onclick="numero('.')">.</button>
+        <button id="ig" onclick="operador('=')">=</button>
+        <button id="resta" onclick="operador('-')">-</button>
+        <br>
+        <button id="borrarParcial" onclick="borrarParcial()">Borrar</button>
+        <button id="borrarTotal" onclick="borrarTotal()">AC</button>
+        <button id="raiz" onclick="raizCuadrada()">√</button>
+        <button id="elevar2" onclick="elevarPotenciaN(2)">x²</button>
+        <button id="elevar3" onclick="elevarPotenciaN(3)">x³</button>
+    </section>
+    <hr>
+    <footer>
+        D.R. 2023 
+    </footer>
+    </center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
